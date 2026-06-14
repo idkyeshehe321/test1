@@ -28,7 +28,7 @@ local function startGlobalHook()
 
         if isRemoteCall then
             local remoteName = tostring(self.Name)
-            
+
             if module.ActiveBugs[remoteName] then
                 module.ActiveBugs[remoteName].Args = args
             end
@@ -49,7 +49,7 @@ function module.BugRemote(remoteName)
     if not findRemote(remoteName) then
         return nil
     end
-    
+
     if module.ActiveBugs[remoteName] then 
         return module.ActiveBugs[remoteName] 
     end 
