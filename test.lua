@@ -7,7 +7,7 @@ function module.Get(obj)
       if not players:FindFirstChild(v.Name) then
          print(v.Name.. ": ".. v.ClassName)
       else
-         error(v.Name.. ": ".. v.ClassName)
+         warn(v.Name.. ": ".. v.ClassName)
       end
    end
 end
