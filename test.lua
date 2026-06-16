@@ -1,7 +1,9 @@
 local module = {}
 
 function module.Get(obj)
-   return obj:GetDecendents() 
+   for _, v in next, obj:GetDecendents() do
+      print(v.. ": ".. typeof(v))
+   end
 end
 
 return module
